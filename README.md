@@ -6,6 +6,10 @@ This is a neat and clean website reflecting my CSS skills.
 
 Link - https://wizardly-jones-f7e28a.netlify.app
 
+# New Update - Live site hosted on Cloudflare
+
+Link - https://landing-page-l1su.pages.dev
+
 # Project description
 
 # Authors - @codechamp2006
