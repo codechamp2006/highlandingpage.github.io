@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+
+
+.showcase{
+    display:flex;
+    justify-content: center;
+}
+
+.background-image img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.header{
+    position: absolute;
+    z-index: 5;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size:2rem;
+    cursor: pointer;
+    transition:0.5s ease-in-out;
+}
+
+.header:hover{
+    color: black;
+    transition:0.5s ease-in-out;
+}
+
+.intro{
+    position: absolute;
+    z-index: 5;
+    transform: translateY(30vh);
+    margin:10px 10px;
+}
+
+.intro p{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size:1rem;
+}
+
+.fun-facts{
+    position: absolute;
+    z-index: 6;
+    transform: translateY(50vh);
+    background-color: white;
+    border-radius:10px;
+    margin: 20px 20px;
+    box-shadow: 1px 1px 25px 10px rgba(0,0,0,0.6);
+
+}
+
+.fun-facts h1{
+    padding: 5px 15px;
+    font-family: 'Raleway', sans-serif;
+    font-size:2rem;
+    color: black;
+    border-bottom:1px solid red;
+}
+
+#heading{
+    padding:5px 15px;
+    font-family: 'Dancing Script', cursive;
+    font-size:1.5rem;
+}
+
+#info{
+    padding:5px 15px;
+    font-family: 'RocknRoll One', sans-serif;
+    font-size:1rem;
+}
+
+@media screen and (max-width:1200px){
+    .fun-facts{
+        transform: translateY(73vh);
+    }
+}

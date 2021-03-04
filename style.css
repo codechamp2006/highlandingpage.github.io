@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&display=swap');
+
+
+.showcase{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    z-index: -1;
+}
+
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.header{
+    margin-left: 20vw;
+    margin-right: 20vw;
+    position: relative;
+    z-index: 4;
+    transform: translateX(-30vw) translateY(12vh);
+}
+
+.header h1{
+    position:relative;
+    color: #FFFFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size:2.5rem;
+    margin: 0px 0px;
+}
+
+strong{
+    position:relative;
+    color: #FFFFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size:2.5rem;
+    margin: 0px 0px;
+}
+
+p{
+    position:relative;
+    color: #FFFFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size:2.5rem;
+    margin: 0px 0px;
+}
+
+.explore-button{
+    position: relative;
+    z-index: 5;
+    transform:translateX(-77vw) translateY(40vh);
+    background-color: #FFFFFF;
+    transition: 0.5s ease-in-out;
+}
+
+.explore-button a{
+    padding:25px 25px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.9);
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 2rem;
+    transition: 0.5s ease-in-out;
+}
+
+@media screen and (max-width:1200px){
+    .header{
+        margin-left: 60vw;
+    }
+
+    .explore-button{
+        transform: translateX(-92vw) translateY(45vh);
+    }
+}
+
+.explore-button a:hover{
+    color: rgba(255, 255, 255,1);
+    transition: 0.5s ease-in-out;
+}
+
+.explore-button:hover {
+    background-color:black;
+    transition: 0.5s ease-in-out;
+    box-shadow:1px 1px 40px 10px rgba(255, 255, 255, 1);
+}
+
+.social-media{
+    position: relative;
+    margin-left:1vw;
+    z-index: 10;
+    transform: translateY(60vh);
+}
+
+img{
+    margin-right:1vw;
+    transition: 0.3s linear;
+    cursor: pointer;
+}
+
+.social-media img:hover{
+    transform: translateY(-2vh);
+    transition: 0.3s linear;
+}
+
+.social-media ul{
+    display:flex;
+    flex-direction:row;
+}
+
+li{
+    list-style: none;
+}
+
+#youtube img{
+    transform: translateY(-1.5vh);
+    transition:0.3s linear;
+}
+
+#youtube img:hover{
+    transform: translateY(-4vh);
+    transition: 0.3 linear;
+}
+
+@media screen and (max-width:1500px){
+    .explore-button{
+        transform: translateX(-78vw) translateY(50vh);
+    }
+
+    .header{
+        transform: translateX(-27vw) translateY(15vh);
+    }
+}
+
+.nav{
+    position: fixed;
+    z-index: 9;
+    top:15vh;
+}
+
+.nav ul{
+    margin-top: 5vh;
+    display:flex;
+    flex-direction:row;
+    transform: translateY(-16vh) translateX(2vw);
+}
+
+.nav li{
+    list-style: none;
+    margin-right: 3vw;
+}
+
+.nav a{
+    text-decoration:none;
+    font-family: 'Roboto Slab', serif;
+    color: aliceblue;
+    font-weight:medium;
+    font-size: 1.2rem;
+    transition:0.4s linear;
+}
+
+.nav a:hover{
+    border-bottom: 2px solid black;
+    color: black;
+    transition:0.4s linear;
+    letter-spacing:0.1rem;
+}
+
+.video-footer{
+    position: absolute;
+    z-index: 20;
+    transform: translateY(65vh) translateX(70vw);
+    transition:0.5s ease all;
+}
+
+.video-footer a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Noto Serif JP', serif;
+    transition:0.5s ease all;
+    padding:15px 15px;
+}
+
+.video-footer a:hover{
+    color: black;
+    transition:0.5s ease all;
+}
+
+.video-footer:hover{
+    background: white;
+    transition:0.7s ease all;
+    box-shadow: 1px 1px 5px 10px rgba(0,0,0,0.5);
+}
+
+.hamburger-menu{
+    top: 10vh;
+    right: 47vw;
+    position: absolute;
+    z-index: 25;
+    transform: translateY(-7vh) translateX(45vw);
+    transition:0.5s linear;
+}
+
+.hamburger-menu.active{
+    right: 60vw;
+    transition:0.5s linear;
+    background-image: url("https://img.icons8.com/windows/64/000000/macos-close.png");
+}
