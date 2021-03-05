@@ -1,29 +1,228 @@
-.main-container{
-    display:flex;
-    justify-content:center;
-    align-items:center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.background img{
-    top: 0;
-    right: 0;
-    position:fixed; 
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    z-index: 1;
+.background img {
+  top: 0;
+  right: 0;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 1;
 }
 
-.card{
-    top: 10vh;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    height:400px;
-    width: 450px;
-    background-color: #FFFFFF;
-    z-index: 4;
-    transform: translateY(10vh);
-    border-radius:15px;
-    box-shadow: 1px 1px 20px 5px rgba(0,0,0,0.6);
+.card {
+  top: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 400px;
+  width: 450px;
+  background-color: #ffffff;
+  z-index: 4;
+  transform: translateY(10vh);
+  border-radius: 15px;
+  box-shadow: 1px 1px 20px 5px rgba(0, 0, 0, 0.6);
+  font-family: "Poppins", sans-serif;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.header {
+  margin: 20px 20px;
+  transform: translateY(-5vh);
+}
+
+.form-control {
+  transform: translateY(-10vh) translateX(-5vw);
+}
+
+#name {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 20px 20px;
+  cursor: text;
+}
+
+#email {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 30px 20px;
+}
+
+#name label {
+  transform: translateX(4vw);
+  font-size: 1rem;
+  cursor: text;
+  transition: 0.2s ease-in-out;
+}
+
+#email label {
+  transform: translateX(8vw);
+  cursor: text;
+  font-size: 1rem;
+  transition: 0.2s ease-in-out;
+}
+
+#name input {
+  width: 15vw;
+  font-family: inherit;
+  border: none;
+  border-bottom: 1px solid black;
+  transition: 0.2s ease-in-out;
+}
+
+#email input {
+  width: 16vw;
+  font-family: inherit;
+  border: none;
+  border-bottom: 1px solid black;
+  transition: 0.2s ease-in-out;
+}
+
+#name input:focus {
+  outline: none;
+  border-bottom: 1px solid lightsalmon;
+  transition: 0.2s ease-in-out;
+}
+
+#email input:focus {
+  outline: none;
+  border-bottom: 1px solid lightsalmon;
+  transition: 0.2s ease-in-out;
+}
+
+#name input:focus + label {
+  transform: translateY(-4vh) translateX(2vw);
+  transition: 0.2s ease-in-out;
+  font-weight: bold;
+  color: lightsalmon;
+}
+
+#email input:focus + label {
+  transform: translateY(-4vh) translateX(6vw);
+  transition: 0.2s ease-in-out;
+  font-weight: bold;
+  color: lightsalmon;
+}
+
+#name input:valid {
+  outline: none;
+  border-bottom: 1px solid lightsalmon;
+  transition: 0.2s ease-in-out;
+}
+
+#name input:valid + label {
+  transform: translateY(-4vh) translateX(2vw);
+  transition: 0.2s ease-in-out;
+  font-weight: bold;
+  color: lightsalmon;
+}
+
+#email input:valid {
+  outline: none;
+  border-bottom: 1px solid lightsalmon;
+  transition: 0.2s ease-in-out;
+}
+
+#email input:valid + label {
+  transform: translateY(-4vh) translateX(6vw);
+  transition: 0.2s ease-in-out;
+  font-weight: bold;
+  color: lightsalmon;
+}
+
+#password {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 20px 20px;
+  cursor: text;
+}
+
+#password label {
+  transform: translateX(6vw);
+  font-size: 1rem;
+  cursor: text;
+  transition: 0.2s ease-in-out;
+}
+
+#password input {
+  width: 15vw;
+  font-family: inherit;
+  border: none;
+  border-bottom: 1px solid black;
+  transition: 0.2s ease-in-out;
+}
+
+#password input:focus {
+  outline: none;
+  border-bottom: 1px solid lightsalmon;
+  transition: 0.2s ease-in-out;
+}
+
+#password input:focus + label {
+  transform: translateY(-4vh) translateX(2.5vw);
+  transition: 0.2s ease-in-out;
+  font-weight: bold;
+  color: lightsalmon;
+}
+
+#password input:valid {
+  outline: none;
+  border-bottom: 1px solid lightsalmon;
+  transition: 0.2s ease-in-out;
+}
+
+#password input:valid + label {
+  transform: translateY(-4vh) translateX(2.5vw);
+  transition: 0.2s ease-in-out;
+  font-weight: bold;
+  color: lightsalmon;
+}
+
+#checkbox1 {
+  transform: translateX(10vw);
+}
+
+#submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Noto Sans JP", sans-serif;
+  margin: 10px 10px;
+  background-color: lightgreen;
+  height: 80px;
+  width: 100%;
+  transform: translateY(1.3vh);
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+#submit:hover {
+  background-color: green;
+  transition: 0.4s ease-in-out;
+}
+
+#submit a {
+  text-decoration: none;
+  color: black;
+}
+
+#submit h1 {
+  font-size: 2rem;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  transition: 0.3s linear;
+}
+
+#submit h1:hover {
+  letter-spacing: 5px;
+  transition: 0.3s linear;
 }

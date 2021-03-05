@@ -6,17 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="./contact.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://img.icons8.com">
     <link rel="shortcut icon" href="https://img.icons8.com/material-rounded/96/000000/add-contact-to-company.png" type="image/png">
 </head>
-<body>
+<body> 
     <div class="main-container">
+        <!--Creating a background image-->
         <div class="background">
-            <img src="../images/contact-background.jpg" alt="">
+            <img src="https://ik.imagekit.io/gna0wch172q/contact-background_3kosZc39f.jpg" alt="">
         </div>
+        <!--Creating a card-->
         <div class="card">
             <div class="header">
-                <h1></h1>
+                <h1>Contact Us</h1>
+            </div>
+            <div class="form-control">
+                <div id="name">
+                    <input type="text" required>
+                    <label for="Name">Name</label>
+                </div>
+                <div id="email">
+                    <input type="email" required>
+                    <label for="email">Email address</label>
+                </div>
+                <div id="password">
+                    <input type="password" autocomplete="off" required>
+                    <label for="password">Password</label>
+                </div>
+                <div id="checkbox1">
+                    <input type="checkbox">
+                    <label for="checkbox1">I understand that my data might be stored and used in personalization. </label> 
+                </div>
+            </div>
+            <div id="submit">
+                <a href="./submit.html"><h1>Submit</h1></a>
             </div>
         </div>
     </div>
