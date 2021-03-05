@@ -41,20 +41,25 @@
 }
 
 .form-control {
-  transform: translateY(-10vh) translateX(-5vw);
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  transform: translateY(-10vh) translateX(-10vw);
 }
 
 #name {
   display: flex;
   flex-direction: row-reverse;
-  margin: 20px 20px;
+  margin:15px 10px;
   cursor: text;
 }
 
 #email {
   display: flex;
   flex-direction: row-reverse;
-  margin: 30px 20px;
+  margin: 10px 10px;
+  transform: translateX(-2vw);
 }
 
 #name label {
@@ -72,7 +77,7 @@
 }
 
 #name input {
-  width: 15vw;
+  width: 16vw;
   font-family: inherit;
   border: none;
   border-bottom: 1px solid black;
@@ -142,7 +147,7 @@
 #password {
   display: flex;
   flex-direction: row-reverse;
-  margin: 20px 20px;
+  margin: 10px 20px;
   cursor: text;
 }
 
@@ -188,7 +193,18 @@
 }
 
 #checkbox1 {
-  transform: translateX(10vw);
+  display: flex;
+  flex-direction: row;
+  transform: translateX(10vw) translateY(2vh);
+}
+
+#checkbox1 input{
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+#checkbox1 input:hover{
 }
 
 #submit {
@@ -196,11 +212,10 @@
   justify-content: center;
   align-items: center;
   font-family: "Noto Sans JP", sans-serif;
-  margin: 10px 10px;
+  margin: 5px 5px;
   background-color: lightgreen;
   height: 80px;
   width: 100%;
-  transform: translateY(1.3vh);
   cursor: pointer;
   transition: 0.4s ease-in-out;
 }
@@ -226,3 +241,5 @@
   letter-spacing: 5px;
   transition: 0.3s linear;
 }
+
+
